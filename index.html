@@ -28,7 +28,7 @@
             <a class="nav-link" href="#">Link</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0" method="POST">
+        <form class="form-inline my-2 my-lg-0" method="POST" action="">
           {% csrf_token %}
          {{form|crispy}}
           <button class="btn btn-outline-success my-2 my-sm-0 m-3" type="submit">Search</button>

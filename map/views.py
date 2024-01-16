@@ -27,7 +27,7 @@ def index(request):
     # Adding a marker to the map
     folium.Marker([lat, lng], tooltip='Click for more', popup=country).add_to(m)
     # Get HTML representation of Map object
-    m = m._repr_html_()
+    # m = m._repr_html_()
     context = {
         'm': m,
         'form': form,
